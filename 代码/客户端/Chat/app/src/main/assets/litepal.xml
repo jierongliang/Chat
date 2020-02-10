@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="UserList" />
+
+
+    <version value="3" />
+
+
+    <list>
+        <mapping class="com.example.chat.User"></mapping>
+        <mapping class="com.example.chat.Container"></mapping>
+    </list>
+
+
+
+</litepal>

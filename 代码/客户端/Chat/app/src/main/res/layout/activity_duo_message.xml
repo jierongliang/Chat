@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuoMessageActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请输入联系人的用户名(一行一个)"
+        android:textSize="15sp"
+
+        android:textColor="#98FB98"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:minLines="10"
+        android:maxLines="15"
+        android:hint=" 用户名"
+        android:padding="10dp"
+
+        android:textColor="#87CEFA"
+        android:id="@+id/iv_duomessageusername"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请输入发送的消息"
+        android:textSize="15sp"
+
+        android:textColor="#98FB98"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:hint=" 消息"
+        android:padding="10dp"
+        android:minLines="5"
+        android:textColor="#87CEFA"
+        android:id="@+id/iv_duomessagetext"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加"
+        android:textSize="15sp"
+        android:background="#6495ED"
+        android:layout_gravity="center"
+        android:id="@+id/iv_duoButton"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0980C3">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/usericon"
+            android:layout_gravity="left"
+            android:id="@+id/iv_usericon"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="联系人"
+            android:textSize="18sp"
+            android:textColor="#00FF00"
+            android:id="@+id/iv_message"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/timg"
+            android:layout_gravity="right"
+            android:id="@+id/iv_adduser"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/minusimages"
+            android:layout_gravity="right"
+            android:id="@+id/iv_minususer"/>
+
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+        <!--android:childDivider="#c8c7cc"-->
+        <!--android:divider="@null"-->
+        <!--android:dividerHeight="1dp"-->
+        <!--android:gravity="center"-->
+
+        <!--android:listSelector="#ffffff"-->
+        <!--android:scrollbars="none" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/messagelogo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/messagelogo" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userlogo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/userlogo" />
+
+    </LinearLayout>
+</LinearLayout>
